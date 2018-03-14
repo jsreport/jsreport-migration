@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+const startMigration = require('../lib')
+
+startMigration()

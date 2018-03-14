@@ -1,0 +1,54 @@
+{
+  "name": "jsreport-migration",
+  "version": "0.0.0",
+  "description": "Utility to migrate from jsreport v1 to v2",
+  "author": "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
+  "contributors": [
+    "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
+    "Jan Blaha"
+  ],
+  "homepage": "https://github.com/jsreport/jsreport-migration",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jsreport/jsreport-migration.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jsreport/jsreport-migration/issues"
+  },
+  "keywords": [
+    "jsreport",
+    "migration",
+    "jsreport-migration"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "jsreport-migration": "./bin/jsreport-migration"
+  },
+  "scripts": {
+    "start": "node bin/jsreport-migration",
+    "test": "mocha test/test.js"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "node": true,
+      "mocha": true
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.2",
+    "eslint": "4.18.2",
+    "eslint-plugin-babel": "4.1.2",
+    "mocha": "5.0.3",
+    "should": "13.2.1",
+    "standard": "11.0.0"
+  }
+}

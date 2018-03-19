@@ -1,4 +1,16 @@
 #!/usr/bin/env node
 const startMigration = require('../lib')
+const pkg = require('../package.json')
 
-startMigration()
+const argv = require('yargs-parser')(process.argv.slice(2), {
+  alias: {
+    version: ['v'],
+    cwd: ['d']
+  }
+})
+
+if (argv.version === true) {
+  return console.log(pkg.version)
+}
+
+startMigration(typeof argv.cwd === 'string' ? argv.cwd : undefined)

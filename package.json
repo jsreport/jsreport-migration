@@ -1,6 +1,6 @@
 {
   "name": "jsreport-migration",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Utility to migrate from jsreport v1 to v2",
   "author": "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
   "contributors": [
